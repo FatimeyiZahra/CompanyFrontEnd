@@ -58,7 +58,7 @@
 #feature {
     padding: 120px 0;
     position: relative;
-    .image{
+    .image {
         z-index: 98;
     }
     .carousel-card {
@@ -69,9 +69,9 @@
                 padding: 15px;
                 // position: relative;
                 .owl-item {
-                    .image{
+                    .image {
                         width: 24%;
-                     }
+                    }
                     padding: 50px;
                     border-bottom: 3px solid #437eeb;
                     box-shadow: 0 0 10px #cccccc;
@@ -197,4 +197,124 @@
     // .center-tabs .nav-tabs li a:focus {
     //     background: transparent;
     // }
+}
+#map {
+    background-color: #f5f8fc;
+    .image {
+        position: relative;
+        img {
+            opacity: 0.7;
+        }
+    }
+    .client-items {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 88;
+    }
+}
+#services {
+    padding-top: 40px;
+    position: relative;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: -3px;
+        height: 360%;
+        width: 68px;
+        background: #f4f7fc;
+        z-index: 1;
+        border-radius: 50px;
+    }
+
+    h2 {
+        font-weight: 700;
+        margin-top: 50px;
+        font-size: 36px;
+    }
+    p {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .image {
+        position: absolute;
+        right: 50px;
+        top: 92px;
+        img {
+            -webkit-animation: spin 10s linear infinite;
+            -moz-animation: spin 10s linear infinite;
+            animation: spin 10s linear infinite;
+        }
+    }
+    @-moz-keyframes spin {
+        100% {
+            -moz-transform: rotate(360deg);
+        }
+    }
+    @-webkit-keyframes spin {
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+    @keyframes spin {
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+}
+#services-items {
+    padding-bottom: 120px;
+    .item {
+        box-shadow: 0 5px 30px 0 rgba(214, 215, 216, 0.57);
+        padding: 50px 30px;
+        background: #ffffff;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 5px;
+        &::after {
+            position: absolute;
+            left: 0;
+            bottom: -100%;
+            content: "";
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to bottom, #437eeb 0%, #093ac1 100%);
+            opacity: 0;
+            z-index: -1;
+            transition: all 0.25s ease-in-out;
+        }
+        &:hover::after {
+            opacity: 1;
+            bottom: 0;
+           
+        }
+        &:hover{
+            .btn-standard{
+                color:#ffffff;
+                border: 1px solid #e7e7e7
+            }
+            h4{
+                color:#ffffff;
+            }
+            p{
+                color:#ffffff;
+            }
+        }
+        h4 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 30px;
+            min-height: 100px;
+        }
+    }
 }
