@@ -291,7 +291,6 @@ a:hover {
 }
 
 .btn-standard:hover {
-  background: #ffffff;
   color: #437eeb;
 }
 
@@ -469,47 +468,6 @@ a:hover {
   transition: all 0.25s ease-in-out;
 }
 
-/*
-    Flaticon icon font: Flaticon
-    Creation date: 04/06/2020 18:52
-    */
-@font-face {
-  font-family: "Flaticon";
-  src: url("./Flaticon.eot");
-  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"), url("./Flaticon.woff2") format("woff2"), url("./Flaticon.woff") format("woff"), url("./Flaticon.ttf") format("truetype"), url("./Flaticon.svg#Flaticon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  @font-face {
-    font-family: "Flaticon";
-    src: url("./Flaticon.svg#Flaticon") format("svg");
-  }
-}
-
-.fi:before {
-  display: inline-block;
-  font-family: "Flaticon";
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  line-height: 1;
-  text-decoration: inherit;
-  text-rendering: optimizeLegibility;
-  text-transform: none;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-}
-
-.flaticon-competition:before {
-  content: "\f100";
-}
-
-.flaticon-target:before {
-  content: "\f101";
-}
-
 .navbar {
   position: fixed;
   -webkit-box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.04);
@@ -590,7 +548,11 @@ a:hover {
   padding: 15px;
 }
 
-#feature .carousel-card .feature-items .owl-stage-outer .owl-item {
+#feature .carousel-card .feature-items .owl-stage-outer .owl-stage {
+  left: -100px;
+}
+
+#feature .carousel-card .feature-items .owl-stage-outer .owl-stage .owl-item {
   padding: 50px;
   border-bottom: 3px solid #437eeb;
   -webkit-box-shadow: 0 0 10px #cccccc;
@@ -599,17 +561,25 @@ a:hover {
   border-radius: 10px;
 }
 
-#feature .carousel-card .feature-items .owl-stage-outer .owl-item .image {
-  width: 24%;
+#feature .carousel-card .feature-items .owl-stage-outer .owl-stage .owl-item .icon i {
+  padding-bottom: 30px;
+  padding-top: 20px;
+  font-size: 70px;
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, right top, from(#031941), to(#437eeb));
+  background: linear-gradient(90deg, #031941 0%, #437eeb 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-#feature .carousel-card .feature-items .owl-stage-outer .owl-item h3 {
+#feature .carousel-card .feature-items .owl-stage-outer .owl-stage .owl-item h3 {
   font-weight: 700;
   margin-bottom: 25px;
   margin-top: 13px;
 }
 
-#feature .carousel-card .feature-items .owl-stage-outer .owl-item .bottom {
+#feature .carousel-card .feature-items .owl-stage-outer .owl-stage .owl-item .bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -733,6 +703,8 @@ a:hover {
 
 #map {
   background-color: #f5f8fc;
+  background-image: url("../img/map.svg");
+  height: 200px;
 }
 
 #map .image {
@@ -759,10 +731,10 @@ a:hover {
   content: "";
   display: inline-block;
   position: absolute;
-  left: 0;
+  left: -26px;
   top: -3px;
-  height: 360%;
-  width: 68px;
+  height: 365%;
+  width: 85px;
   background: #f4f7fc;
   z-index: 1;
   border-radius: 50px;
@@ -840,7 +812,11 @@ a:hover {
 
 #services-items .item:hover .btn-standard {
   color: #ffffff;
-  border: 1px solid #e7e7e7;
+}
+
+#services-items .item:hover .btn-standard i {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 #services-items .item:hover h4 {
@@ -862,5 +838,145 @@ a:hover {
   height: auto;
   margin-bottom: 30px;
   min-height: 100px;
+}
+
+#workProcess {
+  padding: 120px 0;
+  background-color: #f5f8fc;
+}
+
+#workProcess .heading {
+  position: relative;
+}
+
+#workProcess .heading h4 {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #437eeb;
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+
+#workProcess .heading h2 {
+  display: block;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 60px;
+  font-size: 36px;
+}
+
+#workProcess .icon i {
+  font-size: 50px;
+  background: -webkit-gradient(linear, left top, right top, from(#1e55bd), to(#437eeb));
+  background: linear-gradient(90deg, #1e55bd 0%, #437eeb 100%);
+  line-height: 112px;
+  width: 34%;
+  height: 100%;
+  display: inline-block;
+  color: #ffffff;
+  border-radius: 50%;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+#workProcess .icon img {
+  position: absolute;
+  width: 200px;
+  right: -97px;
+  top: 14px;
+}
+
+#workProcess .icon span {
+  background: #ffffff;
+  position: absolute;
+  right: 34%;
+  top: -1px;
+  height: 35px;
+  line-height: 35px;
+  width: 35px;
+  z-index: 1;
+  color: #437eeb;
+  font-weight: 800;
+  font-size: 14px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 10px #cccccc;
+          box-shadow: 0 0 10px #cccccc;
+}
+
+#workProcess .info {
+  position: relative;
+}
+
+#workProcess .info h4 {
+  font-weight: 800;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  padding-top: 70px;
+}
+
+#workProcess .info::before {
+  content: "";
+  border-left: 2px dashed #dddddd;
+  top: 18px;
+  height: 40px;
+  left: 50%;
+  position: absolute;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  width: 1px;
+  z-index: 1;
+  margin-left: -1px;
+}
+
+#workProcess .info p::after {
+  content: "";
+  border: 2px solid #dddddd;
+  border-radius: 50%;
+  top: 0px;
+  height: 14px;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  width: 14px;
+  z-index: 1;
+}
+
+#our-skill {
+  padding: 120px;
+}
+
+#our-skill h2 {
+  font-weight: 700;
+}
+
+#our-skill h3 {
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #666666;
+}
+
+#our-skill .image {
+  max-width: 60%;
+}
+
+#our-skill .progress-barss .item .info h5 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+#our-skill .progress-barss .item .progress {
+  height: 2px;
+}
+
+#our-skill .progress-barss .item .progress .progress-bar {
+  height: 6px;
 }
 /*# sourceMappingURL=style.css.map */

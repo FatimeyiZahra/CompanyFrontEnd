@@ -64,7 +64,7 @@ $('.feature-items').owlCarousel({
     ],
     responsive: {
         1000: {
-            stagePadding: 110,
+            stagePadding: 100,
         }
     }
 });
