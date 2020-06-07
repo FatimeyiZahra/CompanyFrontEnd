@@ -814,14 +814,14 @@ a:hover {
   background: linear-gradient(90deg, #1e55bd 0%, #437eeb 100%);
 }
 
-#our-skill .our-skills-text-progressBar::before {
+#our-skill::before {
   content: "";
   display: inline-block;
   position: absolute;
-  left: -19%;
-  top: -46%;
-  height: 190%;
-  width: 90px;
+  left: -24px;
+  top: -6px;
+  height: 111%;
+  width: 96px;
   background: #f4f7fc;
   z-index: 1;
   border-radius: 50px;
@@ -972,6 +972,7 @@ a:hover {
 }
 
 #blog-area {
+  position: relative;
   padding: 120px 0;
   background-color: #f5f8fc;
 }
@@ -1002,6 +1003,7 @@ a:hover {
 
 #blog-area .item .photo img {
   max-width: 100%;
+  border-radius: 10px 10px 0 0;
 }
 
 #blog-area .item .photo .date {
@@ -1024,7 +1026,7 @@ a:hover {
   padding-top: 55px;
 }
 
-#blog-area .item .content .meta h4 {
+#blog-area .item .content h4 {
   margin-bottom: 20px;
 }
 
@@ -1044,5 +1046,106 @@ a:hover {
   position: relative;
   z-index: 1;
   margin-bottom: 5px;
+}
+
+#blog-area .item .content .meta ul li a {
+  display: inline-block;
+  font-weight: 700;
+  color: #666666;
+}
+
+#blog-area .item .content .bottom a {
+  margin-top: 7px;
+}
+
+#blog-area::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -29px;
+  top: -6px;
+  height: 101%;
+  width: 95px;
+  background: #ffffff;
+  z-index: 1;
+  border-radius: 50px;
+}
+
+#footer {
+  padding: 120px 0;
+}
+
+#footer img {
+  margin-bottom: 30px;
+}
+
+#footer ul li {
+  list-style: none;
+  margin-bottom: 18px;
+}
+
+#footer .links ul li a {
+  display: inline-block;
+  color: #666666;
+  font-weight: 600;
+}
+
+#footer h4 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 30px;
+  font-weight: 700;
+  z-index: 1;
+}
+
+#footer .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+}
+
+#footer .social-icons li {
+  margin-right: 7px;
+}
+
+#footer .social-icons li a i {
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+#footer .social-icons .fa-facebook-f {
+  background: linear-gradient(120deg, #3b5998, #0078d7);
+}
+
+#footer .social-icons .fa-twitter {
+  background-color: #1da1f2;
+}
+
+#footer .social-icons .fa-youtube {
+  background-color: #ff0000;
+}
+
+#footer .social-icons .fa-instagram {
+  font-size: 29px;
+  line-height: 38px;
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), -webkit-gradient(linear, left top, left bottom, from(#6559ca), color-stop(30%, #bc318f), color-stop(50%, #e33f5f), color-stop(70%, #f77638), to(#fec66d));
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+
+#footerEnd {
+  background-image: url("http://thememine.net/themeforest/anada/assets/img/shape/1.svg");
+  width: 100%;
+}
+
+#footerEnd ul li {
+  list-style: none;
+  margin-left: 15px;
 }
 /*# sourceMappingURL=style.css.map */
