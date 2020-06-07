@@ -304,8 +304,8 @@ a:hover {
 }
 
 #feature {
-  padding: 120px 0;
   position: relative;
+  padding: 120px 0;
 }
 
 #feature .image {
@@ -390,11 +390,8 @@ a:hover {
   content: "";
   height: 5px;
   width: 5px;
-  transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   background: #437eeb;
   border-radius: 50%;
 }
@@ -413,19 +410,31 @@ a:hover {
 }
 
 #about-us .heading h4 {
+  position: relative;
+  display: inline-block;
   text-transform: uppercase;
   font-weight: 800;
   color: #437eeb;
   font-size: 20px;
-  position: relative;
   z-index: 1;
-  display: inline-block;
+}
+
+#about-us .heading h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 10px;
+  width: 100%;
+  background: #437eeb;
+  z-index: -1;
+  opacity: 0.1;
 }
 
 #about-us .heading h2 {
+  position: relative;
   display: block;
   font-weight: 700;
-  position: relative;
   margin-bottom: 35px;
   font-size: 36px;
 }
@@ -433,12 +442,12 @@ a:hover {
 #about-us .center-tabs {
   margin-top: 40px;
   border-bottom: none;
-  margin-bottom: 40px !important;
+  margin-bottom: 40px;
 }
 
 #about-us .center-tabs .nav-tabs {
   border-bottom: none;
-  margin-bottom: 40px !important;
+  margin-bottom: 40px;
 }
 
 #about-us .center-tabs .nav-tabs li {
@@ -597,10 +606,10 @@ a:hover {
 }
 
 #services-items .item::after {
+  content: "";
   position: absolute;
   left: 0;
   bottom: -100%;
-  content: "";
   height: 100%;
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#437eeb), to(#093ac1));
@@ -656,19 +665,31 @@ a:hover {
 }
 
 #workProcess .heading h4 {
+  position: relative;
+  display: inline-block;
   text-transform: uppercase;
   font-weight: 800;
   color: #437eeb;
   font-size: 20px;
-  position: relative;
   z-index: 1;
-  display: inline-block;
+}
+
+#workProcess .heading h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 10px;
+  width: 100%;
+  background: #437eeb;
+  z-index: -1;
+  opacity: 0.1;
 }
 
 #workProcess .heading h2 {
+  position: relative;
   display: block;
   font-weight: 700;
-  position: relative;
   margin-bottom: 60px;
   font-size: 36px;
 }
@@ -789,6 +810,8 @@ a:hover {
 
 #our-skill .our-skills-text-progressBar .progress-barss .item .progress .progress-bar {
   border-radius: 30px;
+  background: -webkit-gradient(linear, left top, right top, from(#1e55bd), to(#437eeb));
+  background: linear-gradient(90deg, #1e55bd 0%, #437eeb 100%);
 }
 
 #our-skill .our-skills-text-progressBar::before {
@@ -825,7 +848,6 @@ a:hover {
 
 #our-skill .image::after {
   position: absolute;
-  /* right: 9%; */
   left: 22%;
   top: 9%;
   height: 509px;
@@ -838,10 +860,12 @@ a:hover {
 }
 
 #testimonials-area {
-  padding: 120px 0;
+  padding-top: 70px;
+  padding-bottom: 120px;
 }
 
 #testimonials-area .testimonials-head h4 {
+  position: relative;
   text-transform: uppercase;
   font-weight: 800;
   color: #437eeb;
@@ -849,6 +873,18 @@ a:hover {
   position: relative;
   z-index: 1;
   display: inline-block;
+}
+
+#testimonials-area .testimonials-head h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 10px;
+  width: 100%;
+  background: #437eeb;
+  z-index: -1;
+  opacity: 0.1;
 }
 
 #testimonials-area .testimonials-head h2 {
@@ -922,6 +958,8 @@ a:hover {
 }
 
 #testimonials-area .testimonials-carousel .carousel .carousel-indicators li img {
+  -webkit-box-shadow: 0 0 10px #cccccc;
+          box-shadow: 0 0 10px #cccccc;
   display: block;
   height: auto;
   width: 100%;
@@ -931,5 +969,80 @@ a:hover {
   width: 55px;
   min-width: 55px;
   min-height: 55px;
+}
+
+#blog-area {
+  padding: 120px 0;
+  background-color: #f5f8fc;
+}
+
+#blog-area h2 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+#blog-area .text {
+  margin-left: 95px;
+}
+
+#blog-area .text p {
+  margin-bottom: 25px;
+}
+
+#blog-area .item {
+  -webkit-box-shadow: 0 0 10px #cccccc;
+          box-shadow: 0 0 10px #cccccc;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+#blog-area .item .photo {
+  position: relative;
+}
+
+#blog-area .item .photo img {
+  max-width: 100%;
+}
+
+#blog-area .item .photo .date {
+  position: absolute;
+  left: 30px;
+  bottom: -30px;
+  text-align: center;
+  background: #ffffff;
+  padding: 15px 30px;
+  text-transform: capitalize;
+  font-weight: 600;
+  line-height: 27px;
+  -webkit-box-shadow: 0 0 10px #cccccc;
+          box-shadow: 0 0 10px #cccccc;
+  border-radius: 5px;
+}
+
+#blog-area .item .content {
+  padding: 30px;
+  padding-top: 55px;
+}
+
+#blog-area .item .content .meta h4 {
+  margin-bottom: 20px;
+}
+
+#blog-area .item .content .meta ul {
+  list-style: none;
+}
+
+#blog-area .item .content .meta ul i {
+  color: #437eeb;
+}
+
+#blog-area .item .content .meta ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-right: 7px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 5px;
 }
 /*# sourceMappingURL=style.css.map */
