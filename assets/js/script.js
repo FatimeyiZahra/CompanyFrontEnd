@@ -56,6 +56,8 @@ $('.feature-items').owlCarousel({
     nav: false,
     margin: 30,
     dots: true,
+    // dotData: true,
+    // dotsData: true,
     autoplay: true,
     items: 1,
     navText: [
@@ -68,3 +70,6 @@ $('.feature-items').owlCarousel({
         }
     }
 });
+$('.carousel').carousel({
+    interval: 2000
+  })
