@@ -516,25 +516,33 @@ a:hover {
   color: #232323;
 }
 
-#map {
+#fact {
   background-color: #f5f8fc;
   background-image: url("../img/map.svg");
-  height: 200px;
+  padding: 120px 0;
 }
 
-#map .image {
-  position: relative;
+#fact .fact-item .item .timer {
+  display: block;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1;
+  margin-top: -5px;
+  margin-bottom: 15px;
+  color: #232323;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-gradient(linear, left top, right top, from(#031941), to(#437eeb));
+  background: linear-gradient(90deg, #031941 0%, #437eeb 100%);
+  -webkit-background-clip: text;
 }
 
-#map .image img {
-  opacity: 0.7;
-}
-
-#map .client-items {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 88;
+#fact .fact-item .item span {
+  display: block;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: -5px;
+  color: #232323;
 }
 
 #services {
@@ -1072,7 +1080,7 @@ a:hover {
 }
 
 #footer {
-  padding: 120px 0;
+  padding-top: 120px;
 }
 
 #footer img {
@@ -1140,11 +1148,43 @@ a:hover {
 }
 
 #footerEnd {
-  background-image: url("http://thememine.net/themeforest/anada/assets/img/shape/1.svg");
-  width: 100%;
+  padding: 101px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.96)), to(rgba(255, 255, 255, 0.93))), url("../img/footerPic.svg");
+  background: linear-gradient(rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.93)), url("../img/footerPic.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  position: relative;
 }
 
-#footerEnd ul li {
+#footerEnd .validThemes {
+  position: absolute;
+  top: 28px;
+  left: 0;
+}
+
+#footerEnd .validThemes a {
+  color: #437eeb;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+#footerEnd .footerEnd-text {
+  position: absolute;
+  top: 28px;
+  right: 3px;
+}
+
+#footerEnd .footerEnd-text ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+#footerEnd .footerEnd-text ul li {
   list-style: none;
   margin-left: 15px;
 }

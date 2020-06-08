@@ -1,20 +1,3 @@
-// function wowAnimation() {
-//     var wow = new WOW({
-//         boxClass: 'wow',
-//         animateClass: 'animated',
-//         offset: 0,
-//         mobile: false,
-//         live: true
-//     });
-//     wow.init();
-// }
-
-
-// $(window).on('load', function () {
-//     wowAnimation();
-// });
-
-
 $(document).ready(function () {
     var wow = new WOW({
         boxClass: 'wow', // animated element css class (default is wow)
@@ -25,51 +8,32 @@ $(document).ready(function () {
     });
     wow.init();
 
+    let numbersCarousel = $('.feature-items'); // feature section's owl-carousel
 
-    // let numbersCarousel = $('.feature-items');
-
-    // numbersCarousel.owlCarousel({
-    //     loop: true,
-    //     margin: 20,
-    //     dots: true,
-    //     autoplay: true,
-    //     autoplayTimeout: 1000,
-    //     autoplayHoverPause: true,
-   
-    //     responsive: {
-    //         0: {
-    //             items: 1
-    //         },
-    //         600: {
-    //             items: 2
-    //         },
-    //         1000: {
-    //             items: 2
-    //         }
-    //     }
-    // });
-});
-let numbersCarousel = $('.feature-items');
-
-$('.feature-items').owlCarousel({
-    loop: true,
-    nav: false,
-    margin: 30,
-    dots: true,
-    // dotData: true,
-    // dotsData: true,
-    autoplay: true,
-    items: 1,
-    navText: [
-        "<i class='fa fa-angle-left'></i>",
-        "<i class='fa fa-angle-right'></i>"
-    ],
-    responsive: {
-        1000: {
-            stagePadding: 100,
+    $('.feature-items').owlCarousel({
+        loop: true,
+        nav: false,
+        margin: 30,
+        dots: true,
+        autoplay: true,
+        items: 1,
+        navText: [
+            "<i class='fa fa-angle-left'></i>",
+            "<i class='fa fa-angle-right'></i>"
+        ],
+        responsive: {
+            1000: {
+                stagePadding: 100,
+            }
         }
-    }
+    });
+    $('.carousel').carousel({ // for testimonials-area's carousel
+        interval: 2000
+    })
+
+    $('.timer').countTo({ // for fact section's timer
+        speed: 5000, // how long it should take to count between the target numbers
+    });
 });
-$('.carousel').carousel({
-    interval: 2000
-  })
+
+
