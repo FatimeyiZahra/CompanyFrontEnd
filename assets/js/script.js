@@ -51,5 +51,10 @@ $(document).ready(function () {
 
 
 });
+		// Animate loader off screen
+
+$(window).load(function() {
+		$(".se-pre-con").fadeOut("slow");;
+	});
 
 
