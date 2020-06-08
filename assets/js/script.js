@@ -31,9 +31,25 @@ $(document).ready(function () {
         interval: 2000
     })
 
-    $('.timer').countTo({ // for fact section's timer
-        speed: 5000, // how long it should take to count between the target numbers
+  var o = $('.timer'); // for fact section's 
+    $(window).scroll(function () {
+        var elemPos = o.offset().top;
+        var elemPosBottom = o.offset().top + o.height();
+        var winHeight = $(window).height();
+        var scrollToElem = elemPos - winHeight;
+        var winScrollTop = $(this).scrollTop();
+
+        if (winScrollTop > scrollToElem) {
+            if (elemPosBottom > winScrollTop) {
+                $(document).ready(function () {
+                    o.countTo();
+                });
+
+            }
+        }
     });
+
+
 });
 
 
