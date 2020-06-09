@@ -1,0 +1,116 @@
+#workProcess {
+    padding: 120px 0;
+    background-color: $backgroundColor;
+    .heading {
+        position: relative;
+        h4 {
+            position: relative;
+            display: inline-block;
+            text-transform: uppercase;
+            font-weight: 800;
+            color: $blueColor;
+            font-size: 20px;
+            z-index: 1;
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 10px;
+                width: 100%;
+                background: $blueColor;
+                z-index: -1;
+                opacity: 0.1;
+            }
+        }
+        h2 {
+            position: relative;
+            display: block;
+            font-weight: 700;
+            margin-bottom: 60px;
+            font-size: 36px;
+        }
+    }
+    .work-process-item {
+        .icon {
+            i {
+                font-size: 50px;
+                background: linear-gradient(90deg, rgba(30, 85, 189, 1) 0%, rgba(67, 126, 235, 1) 100%);
+                line-height: 112px;
+                width: 34%;
+                height: 100%;
+                display: inline-block;
+                color: $whiteColor;
+                border-radius: 50%;
+                @include transition(all 0.35s ease-in-out);
+            }
+            img {
+                position: absolute;
+                width: 200px;
+                right: -97px;
+                top: 14px;
+            }
+            span {
+                background: $whiteColor;
+                position: absolute;
+                right: 34%;
+                top: -1px;
+                height: 35px;
+                line-height: 35px;
+                width: 35px;
+                z-index: 1;
+                color: $blueColor;
+                font-weight: 800;
+                font-size: 14px;
+                border-radius: 50%;
+                box-shadow: 0 0 10px $boxShadowColor;
+            }
+        }
+        .info {
+            position: relative;
+            h4 {
+                font-weight: 800;
+                margin-bottom: 10px;
+                margin-top: 20px;
+                padding-top: 70px;
+                &::before {
+                    content: "";
+                    border-left: 2px dashed #dddddd;
+                    top: 18px;
+                    height: 40px;
+                    left: 50%;
+                    position: absolute;
+                    @include transition(all 0.35s ease-in-out);
+                    width: 1px;
+                    z-index: 1;
+                    margin-left: -1px;
+                }
+            }
+
+            p {
+                &::after {
+                    content: "";
+                    border: 2px solid #dddddd;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    border-radius: 50%;
+                    top: 0px;
+                    height: 14px;
+                    left: 50%;
+                    position: absolute;
+                    transform: translateX(-50%);
+                    @include transition(all 0.35s ease-in-out);
+                    width: 14px;
+                    z-index: 1;
+                }
+            }
+        }
+        &:hover {
+            h4 {
+                &::before {
+                    height: 0px;
+                }
+            }
+        }
+    }
+}

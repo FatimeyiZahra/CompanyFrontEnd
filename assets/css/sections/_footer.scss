@@ -1,0 +1,102 @@
+#footer {
+    padding-top: 120px;
+    img {
+        margin-bottom: 30px;
+    }
+    ul {
+        li {
+            list-style: none;
+            margin-bottom: 18px;
+        }
+    }
+    .links {
+        ul {
+            li {
+                a {
+                    display: inline-block;
+                    color: #666666;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    h4 {
+        display: inline-block;
+        position: relative;
+        margin-bottom: 30px;
+        font-weight: 700;
+        z-index: 1;
+    }
+
+    .social-icons {
+        display: flex;
+        margin-top: 25px;
+        li {
+            margin-right: 7px;
+            a {
+                i {
+                    display: inline-block;
+                    width: 37px;
+                    height: 37px;
+                    line-height: 40px;
+                    text-align: center;
+                    color: $whiteColor;
+                    border-radius: 10px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .fa-facebook-f {
+            background: linear-gradient(120deg, #3b5998, #0078d7);
+        }
+        .fa-twitter {
+            background-color: #1da1f2;
+        }
+        .fa-youtube {
+            background-color: #ff0000;
+        }
+        .fa-instagram {
+            font-size: 29px;
+            line-height: 38px;
+            background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
+                radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+                radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+                radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+                radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+                radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+                radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+                linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+        }
+    }
+}
+#footerEnd {
+    padding: 101px 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.93)), url("../img/footerPic.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    position: relative;
+    .validThemes {
+        position: absolute;
+        top: 28px;
+        left: 0;
+        a {
+            color: $blueColor;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+    }
+    .footerEnd-text {
+        position: absolute;
+        top: 28px;
+        right: 3px;
+        ul {
+            display: flex;
+            justify-content: end;
+            li {
+                list-style: none;
+                margin-left: 15px;
+            }
+        }
+    }
+}

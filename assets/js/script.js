@@ -1,18 +1,20 @@
 $(document).ready(function () {
+    //navbar side menu------------------------------------------------------
     $(".fa-search").click(function (e) {
         e.preventDefault();
         $(".top-search").slideToggle("show");
-      });
-      
-  $(".side-menu-icon").click(function(e){
-    e.preventDefault();
-    $(".side-menu").addClass("open")
-  });
+    });
 
-  $(".close-side").click(function(e){
-    e.preventDefault();
-    $(".side-menu").removeClass("open")
-  })
+    $(".side-menu-icon").click(function (e) {
+        e.preventDefault();
+        $(".side-menu").addClass("open")
+    });
+
+    $(".close-side").click(function (e) {
+        e.preventDefault();
+        $(".side-menu").removeClass("open")
+    })
+    //---------------------------------------------------------------------------------------------------
     var wow = new WOW({
         boxClass: 'wow', // animated element css class (default is wow)
         animateClass: 'animated', // animation css class (default is animated)
@@ -21,6 +23,7 @@ $(document).ready(function () {
         live: true // act on asynchronously loaded content (default is true)
     });
     wow.init();
+    //---------------------------------------------------------------------------------------------
 
     let numbersCarousel = $('.feature-items'); // feature section's owl-carousel
 
@@ -44,8 +47,9 @@ $(document).ready(function () {
     $('.carousel').carousel({ // for testimonials-area's carousel
         interval: 2000
     })
+    //------------------------------------------------------------------------------------------------------
 
-  var o = $('.timer'); // for fact section's 
+    var o = $('.timer'); // for fact section's 
     $(window).scroll(function () {
         var elemPos = o.offset().top;
         var elemPosBottom = o.offset().top + o.height();
@@ -62,13 +66,29 @@ $(document).ready(function () {
             }
         }
     });
-
-
+    $('.service-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        autoplay: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:3
+            }
+        }
+    })
 });
-		// Animate loader off screen
 
-$(window).load(function() {
-		$(".se-pre-con").fadeOut("slow");;
-	});
+
+$(window).load(function () {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
+});
 
 
