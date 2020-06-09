@@ -1,4 +1,18 @@
 $(document).ready(function () {
+    $(".fa-search").click(function (e) {
+        e.preventDefault();
+        $(".top-search").slideToggle("show");
+      });
+      
+  $(".side-menu-icon").click(function(e){
+    e.preventDefault();
+    $(".side-menu").addClass("open")
+  });
+
+  $(".close-side").click(function(e){
+    e.preventDefault();
+    $(".side-menu").removeClass("open")
+  })
     var wow = new WOW({
         boxClass: 'wow', // animated element css class (default is wow)
         animateClass: 'animated', // animation css class (default is animated)
