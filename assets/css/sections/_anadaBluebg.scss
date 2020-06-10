@@ -1,0 +1,68 @@
+#our-services {
+    background-image: linear-gradient(90deg, rgba(2, 59, 166, 1) 0%, rgba(67, 126, 235, 1) 100%);
+    background-color: $blueColor;
+    position: relative;
+    padding-top: 190px;
+    padding-bottom: 120px;
+    // background-image: url("../img/shape/png");
+    .fixed-bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 50%;
+        background-repeat: no-repeat;
+        background-position: center left;
+        z-index: 1;
+        opacity: 0.7;
+    }
+    .services-heading {
+        h1 {
+            font-weight: 700;
+            color: $whiteColor;
+        }
+        .breadcrumb {
+            background: transparent none repeat scroll 0 0;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            z-index: 1;
+            li {
+                display: inline-block;
+                font-family: "Nunito", sans-serif;
+                color: $whiteColor;
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: uppercase;
+                margin: 0 7px;
+                padding: 0 7px;
+
+                i {
+                    margin-right: 5px;
+                }
+                a {
+                    position: relative;
+                    color: $whiteColor;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        font-family: "themify";
+                        font-weight: 600;
+                        color: #ffffff;
+                        right: -19px;
+                        height: 8px;
+                        width: 8px;
+                        border: 2px solid rgba(255, 255, 255, 0.7);
+                        border-radius: 50%;
+                        top: 5px;
+                    }
+                }
+                &.active {
+                    color: #dddddd;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

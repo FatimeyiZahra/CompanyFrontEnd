@@ -48,24 +48,6 @@ $(document).ready(function () {
         interval: 2000
     })
     //------------------------------------------------------------------------------------------------------
-
-    var o = $('.timer'); // for fact section's 
-    $(window).scroll(function () {
-        var elemPos = o.offset().top;
-        var elemPosBottom = o.offset().top + o.height();
-        var winHeight = $(window).height();
-        var scrollToElem = elemPos - winHeight;
-        var winScrollTop = $(this).scrollTop();
-
-        if (winScrollTop > scrollToElem) {
-            if (elemPosBottom > winScrollTop) {
-                $(document).ready(function () {
-                    o.countTo();
-                });
-
-            }
-        }
-    });
     $('.service-carousel').owlCarousel({
         loop:true,
         margin:10,
@@ -83,6 +65,12 @@ $(document).ready(function () {
             }
         }
     })
+     $('.timer').countTo();
+    $('.fun-item').appear(function() {
+        $('.timer').countTo();
+    }, {
+        accY: -100
+    });
 });
 
 
@@ -92,3 +80,20 @@ $(window).load(function () {
 });
 
 
+ // var o = $('.timer'); // for fact section's 
+    // $(window).scroll(function () {
+    //     var elemPos = o.offset().top;
+    //     var elemPosBottom = o.offset().top + o.height();
+    //     var winHeight = $(window).height();
+    //     var scrollToElem = elemPos - winHeight;
+    //     var winScrollTop = $(this).scrollTop();
+
+    //     if (winScrollTop > scrollToElem) {
+    //         if (elemPosBottom > winScrollTop) {
+    //             $(document).ready(function () {
+    //                 o.countTo();
+    //             });
+
+    //         }
+    //     }
+    // });

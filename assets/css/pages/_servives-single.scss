@@ -1,0 +1,106 @@
+#services-single-are {
+    padding: 120px 0;
+    .single-area-content {
+        h2 {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .single-area-info {
+            h2 {
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+            ul {
+                li {
+                    position: relative;
+                    margin-bottom: 15px;
+                    padding-left: 22px;
+                    &::after {
+                        position: absolute;
+                        content: "\f058";
+                        font-family: "Font Awesome 5 Free";
+                        color: #437eeb;
+                        left: 0;
+                        top: 0;
+                    }
+                }
+            }
+        }
+        .data-service {
+            img {
+                margin: 30px 0;
+            }
+            h2 {
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+        }
+        .Digital-Analytics-Services {
+            h4 {
+                font-weight: 700;
+            }
+        }
+        .artificial-intelligence {
+            h4 {
+                font-weight: 700;
+            }
+        }
+    }
+    .sidebar-item {
+        border: 1px solid #e7e7e7;
+        padding: 30px;
+        background: #fafafa;
+        padding-top: 0;
+        margin-top: 25px;
+        margin-bottom: 60px;
+        .sidebar-title {
+            background: linear-gradient(90deg, rgba(30, 85, 189, 1) 0%, rgba(67, 126, 235, 1) 100%);
+            color: #ffffff;
+            text-align: center;
+            padding: 16px;
+            font-weight: 800;
+            font-size: 20px;
+            position: relative;
+            top: -25px;
+        }
+        ul {
+            li {
+                margin-bottom: 15px;
+            }
+            li.active {
+                padding-left: 25px;
+                position: relative;
+                a {
+                    color: $blueColor;
+                    &::after {
+                        position: absolute;
+                        font-family: "Font Awesome 5 Free";
+                        content: "\f0a4";
+                        color: #232323;
+                        left: 0;
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
+    .contact {
+            li{
+                display: flex;
+                .icon{
+                    margin-top: 4px;
+                    i{
+                        color: $blueColor;
+                        font-size: 30px;
+                    }
+                }
+            }
+        span {
+            display: block;
+            font-weight: 800;
+        }
+        .info{
+            padding-left: 15px;
+        }
+    }
+}
