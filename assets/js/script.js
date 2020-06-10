@@ -14,7 +14,19 @@ $(document).ready(function () {
         e.preventDefault();
         $(".side-menu").removeClass("open")
     })
-    //---------------------------------------------------------------------------------------------------
+    //----------------------------------------------------------------------------------------------------
+    // change navbar background color---------------------------------------------------------------------
+    $(document).on('scroll', function (e) {
+        e.preventDefault();
+        if (window.scrollY > 0) {
+            $('.navbar').addClass('bg-light')
+        }
+        else if (window.scrollY = 0) {
+            $('.navbar').removeClass('bg-light')
+        }
+    })
+    //------------------------------------------------------------------------------------------------
+
     var wow = new WOW({
         boxClass: 'wow', // animated element css class (default is wow)
         animateClass: 'animated', // animation css class (default is animated)
@@ -71,11 +83,11 @@ $(document).ready(function () {
         var elem = $(this);
         elem.click(function () {
             elem.next().slideToggle("slow");
-            if ($(".fas").hasClass("fa-eye")) {
-                $(".fas").removeClass("fa-eye").addClass("fa-eye-slash");
+            if ($(".fas").hasClass("fa-eye-slash")) {
+                $(".fas").removeClass("fa-eye-slash").addClass("fa-eye");
             }
             else {
-                $(".fas").removeClass("fa-eye-slash").addClass("fa-eye");
+                $(".fas").removeClass("fa-eye").addClass("fa-eye-slash");
             }
         })
     })

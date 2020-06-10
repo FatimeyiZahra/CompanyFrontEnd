@@ -1,4 +1,4 @@
-#our-services {
+#anada-head {
     background-image: linear-gradient(90deg, rgba(2, 59, 166, 1) 0%, rgba(67, 126, 235, 1) 100%);
     background-color: $blueColor;
     position: relative;
@@ -39,7 +39,8 @@
                 padding: 0 7px;
 
                 i {
-                    margin-right: 5px;
+                    margin-right: 9px;
+                    font-size: 14.3px;
                 }
                 a {
                     position: relative;
@@ -50,12 +51,12 @@
                         font-family: "themify";
                         font-weight: 600;
                         color: #ffffff;
-                        right: -19px;
+                        right: -20px;
                         height: 8px;
                         width: 8px;
                         border: 2px solid rgba(255, 255, 255, 0.7);
                         border-radius: 50%;
-                        top: 5px;
+                        top: 4px;
                     }
                 }
                 &.active {
