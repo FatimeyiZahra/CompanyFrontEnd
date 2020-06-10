@@ -49,28 +49,46 @@ $(document).ready(function () {
     })
     //------------------------------------------------------------------------------------------------------
     $('.service-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:false,
+        loop: true,
+        margin: 10,
+        nav: false,
         autoplay: true,
-        responsive:{
-            0:{
-                items:1
+        responsive: {
+            0: {
+                items: 1
             },
-            600:{
-                items:3
+            600: {
+                items: 3
             },
-            1000:{
-                items:3
+            1000: {
+                items: 3
             }
         }
     })
-     $('.timer').countTo();
-    $('.fun-item').appear(function() {
+
+    //answer and question paleace,, show and hide answer and change icon -----------------------------------------------------------
+    $('.card-header').each(function () {
+        var elem = $(this);
+        elem.click(function () {
+            elem.next().slideToggle("slow");
+            if ($(".fas").hasClass("fa-eye")) {
+                $(".fas").removeClass("fa-eye").addClass("fa-eye-slash");
+            }
+            else {
+                $(".fas").removeClass("fa-eye-slash").addClass("fa-eye");
+            }
+        })
+    })
+    //----------------------------------------------------------------------
+    // for fact section's time
+    $('.timer').countTo();
+    $('.fun-item').appear(function () {
         $('.timer').countTo();
     }, {
         accY: -100
     });
+    //------------------------------------------------------------------------
+
 });
 
 

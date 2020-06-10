@@ -85,22 +85,55 @@
         }
     }
     .contact {
-            li{
-                display: flex;
-                .icon{
-                    margin-top: 4px;
-                    i{
-                        color: $blueColor;
-                        font-size: 30px;
-                    }
+        li {
+            display: flex;
+            .icon {
+                margin-top: 4px;
+                i {
+                    color: $blueColor;
+                    font-size: 30px;
                 }
             }
+        }
         span {
             display: block;
             font-weight: 800;
         }
-        .info{
+        .info {
             padding-left: 15px;
+        }
+    }
+    .answer-question {
+        .card {
+            border: 1px solid #dddddd;
+            margin-bottom: 15px;
+            overflow: inherit;
+            background: #ffffff;
+            border-radius: 5px;
+            .card-header {
+                display: flex;
+                justify-content: space-between;
+                border: none;
+                background: transparent;
+                padding: 0;
+                h4 {
+                    cursor: pointer;
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin: 0;
+                    padding: 30px 50px 30px 30px;
+                }
+                .icon{
+                    margin-right: 22px;
+                    margin-top: 24px;
+                    i{
+                        color: black;
+                    }
+                }
+            }
+            .card-body{
+                display: none;
+            }
         }
     }
 }
