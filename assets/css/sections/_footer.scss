@@ -16,6 +16,9 @@
                     display: inline-block;
                     color: #666666;
                     font-weight: 600;
+                    &:hover{
+                        color: $blueColor; //when u hover the link, its color will be taht color
+                    }
                 }
             }
         }
