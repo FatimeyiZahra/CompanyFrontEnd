@@ -1,16 +1,19 @@
 @import 'common/mixins';
 @import 'common/reset';
 @import 'common/varibles';
+//sections
+@import 'sections/footer';
+@import 'sections/header';
+@import 'sections/workProcess';
+@import 'sections/anada-head';
+@import 'sections/loader';
+@import 'sections/header2';
 //pages
 @import 'pages/homePages';
 @import 'pages/services';
 @import 'pages/servives-single';
 @import 'pages/blog-standard';
 @import 'pages/contact';
-//sections
-@import 'sections/footer';
-@import 'sections/header';
-@import 'sections/workProcess';
-@import 'sections/anada-head';
-@import 'sections/loader'
+
+
 

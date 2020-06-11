@@ -1,0 +1,89 @@
+#navbar {
+    .brandBG {
+        img {
+            position: relative;
+            z-index: 1;
+            left: 62px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 92px;
+            width: 12em;
+        }
+    }
+    .nav-item {
+        .nav-link1 {
+            padding: 0;
+            font-weight: 800;
+            font-size: 13px;
+            color: $whiteColor;
+            display: block;
+            transition: all 0.35s ease-in-out;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            &::after {
+                content: "\f107";
+                font-family: "Font Awesome 5 Free";
+            }
+            &.nav-link-black {
+                color: #333333;
+                &:hover {
+                    color: $blueColor;
+                }
+            }
+        }
+        &:hover {
+            .nav-link1 {
+                &::after {
+                    content: "\f106";
+                }
+            }
+            .hover-menu {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+    .nav-contact1 {
+        padding: 0;
+        font-weight: 800;
+        font-size: 13px;
+        color: $whiteColor;
+        display: block;
+        transition: all 0.35s ease-in-out;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        &.nav-contact1-black {
+            color: #333333;
+            &:hover{
+                color: $blueColor;
+            }
+        }
+    }
+    .nav-icons1 {
+        position: relative;
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        min-height: 90px;
+        ul {
+            display: flex;
+            margin-top: 29px;
+            li {
+                a {
+                    color: $whiteColor;
+                    position: relative;
+                    font-size: 18px;
+                    padding: 8px 10px;
+                    &.nav-icon-black{
+                        color: #333333;
+                    }
+                }
+            }
+        }
+    }
+    // .transparent-bg::after {
+    //     content: none !important;
+    // }
+}

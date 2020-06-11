@@ -20,7 +20,9 @@
                 width: 12em;
                 background-color: $blueColor;
             }
+            
         }
+        
         .navbar-collapse {
             margin-right: 60px;
             .navbar-nav {
@@ -196,7 +198,7 @@
             color: #f44336;
         }
         .contact-info {
-           li {
+            li {
                 display: flex;
                 flex-direction: row;
                 padding-bottom: 30px;
@@ -224,7 +226,7 @@
             }
         }
         .widget {
-          x ul {
+            x ul {
                 li {
                     display: block;
                     font-family: "Nunito", sans-serif;
@@ -237,7 +239,6 @@
             }
         }
         .widget-social {
-          
             ul {
                 display: flex;
                 li {

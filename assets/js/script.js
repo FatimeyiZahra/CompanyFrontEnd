@@ -16,13 +16,31 @@ $(document).ready(function () {
     })
     //----------------------------------------------------------------------------------------------------
     // change navbar background color---------------------------------------------------------------------
+    if (window.scrollY == 0) {
+        $(".navbar-brand").addClass("transparent-bg");
+    }
+
     $(document).on('scroll', function (e) {
-        e.preventDefault();
         if (window.scrollY > 0) {
+            // $(".brandBG").removeClass("transparent-bg");
             $('.navbar').addClass('bg-light')
+            $(".brandPic").removeClass('d-block').addClass('d-none');
+            $(".brandPic1").removeClass('d-none').addClass('d-block');
+            $('.nav-link1').addClass('nav-link-black');
+            $('.nav-contact1').addClass('nav-contact1-black');
+            $('.nav-icons1 ul li a').addClass('nav-icon-black')
+
         }
-        else if (window.scrollY = 0) {
+        else if (window.scrollY == 0) {
+            // $(".brandBG").addClass("transparent-bg");
             $('.navbar').removeClass('bg-light')
+            $(".brandPic1").removeClass('d-block').addClass('d-none');
+            $(".brandPic").removeClass('d-none').addClass('d-block');
+            $('.nav-link1').removeClass('nav-link-black');
+            $('.nav-contact1').removeClass('nav-contact1-black');
+            $('.nav-icons1 ul li a').removeClass('nav-icon-black')
+
+
         }
     })
     //------------------------------------------------------------------------------------------------
@@ -83,12 +101,14 @@ $(document).ready(function () {
         var elem = $(this);
         elem.click(function () {
             elem.next().slideToggle("slow");
-            if ($(".fas").hasClass("fa-eye-slash")) {
-                $(".fas").removeClass("fa-eye-slash").addClass("fa-eye");
+
+            if ($(".eye-icon").hasClass("fa-eye-slash")) {
+                $(".eye-icon").removeClass("fa-eye-slash").addClass("fa-eye");
             }
             else {
-                $(".fas").removeClass("fa-eye").addClass("fa-eye-slash");
+                $(".eye-icon").removeClass("fa-eye").addClass("fa-eye-slash");
             }
+
         })
     })
     //----------------------------------------------------------------------
