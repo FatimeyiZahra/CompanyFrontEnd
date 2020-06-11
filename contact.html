@@ -256,7 +256,7 @@
     <!-- anada-head section finished -->
     <!-- contact-us section started -->
     <!-- there are smoe contact information and form -->
-    <div class="section" id="contact-us">
+    <section id="contact-us">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
@@ -276,8 +276,8 @@
                                     <i class="fas fa-phone"></i>
                                 </div>
                                 <div class="info">
-                                    <h5>Make A Call</h5> 
-                                    <p>+123 456 7890</p> 
+                                    <h5>Make A Call</h5>
+                                    <p>+123 456 7890</p>
                                 </div>
                             </li>
                             <li>
@@ -292,18 +292,60 @@
                         </ul>
                     </div>
                 </div>
+                <div class="col-lg-8">
+                    <div class="message">
+                        <h2>We’d love to hear from you anytime</h2>
+                        <form>
+                            <div class="row">
+                                <div class="col-12">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-6">
+                                    <input type="text" class="form-control" placeholder="Email*">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" class="form-control" placeholder="Phone">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="comments" name="comments"
+                                            placeholder="Tell Us About Project*"></textarea> </textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <button type="submit" name="submit" id="submit">
+                                        Send Message <i class="fa fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- contact-us section finished -->
-
+    <!-- map section started -->
+    <section id="map">
+        <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+            <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                style="border:0" allowfullscreen>
+            </iframe>
+        </div>
+    </section>
     <footer>
-        <section id="footer">
+        <section id="footer-dark">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="image">
-                            <img src="assets/img/logo.png" alt="" srcset="">
+                            <img src="assets/img/logo-light.png" alt="" srcset="">
                         </div>
                         <div class="footer-text">
                             <p>Required honoured trifling eat pleasure man relation. Assurance yet bed was improving
@@ -386,10 +428,6 @@
                     </div>
 
                 </div>
-            </div>
-        </section>
-        <section id="footerEnd">
-            <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="validThemes">
@@ -414,6 +452,8 @@
                     </div>
                 </div>
             </div>
+            <div class="footer-shape" style="background-image: url(assets/img/footerPic.svg);"></div>
+
         </section>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

@@ -16,9 +16,9 @@ $(document).ready(function () {
     })
     //----------------------------------------------------------------------------------------------------
     // change navbar background color---------------------------------------------------------------------
-    if (window.scrollY == 0) {
-        $(".navbar-brand").addClass("transparent-bg");
-    }
+    // if (window.scrollY == 0) {
+    //     $(".navbar-brand").addClass("transparent-bg");
+    // }
 
     $(document).on('scroll', function (e) {
         if (window.scrollY > 0) {

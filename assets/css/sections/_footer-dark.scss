@@ -1,18 +1,21 @@
-#footer {
-    padding: 120px 0;
-    position: relative;
-    .footer-shape {
-        position: absolute;
-        background: linear-gradient(rgba(27, 24, 65, 0.651), rgba(33, 34, 68, 0.733));
-        opacity: 0.03;
-        left: 0;
-        bottom: 0;
-        height: 100%;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-position: center bottom;
-        z-index: 1;
-    }
+#footer-dark {
+    padding: 120px;
+   position: relative;
+   background: #111d30 none repeat scroll 0 0 !important;
+
+   .footer-shape{
+    position: absolute;
+    background: linear-gradient(rgba(27, 24, 65, 0.651), rgba(33, 34, 68, 0.733));
+    opacity: 0.03;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    z-index: 1;
+   }
+       
     img {
         margin-bottom: 30px;
     }
@@ -27,21 +30,33 @@
             li {
                 a {
                     display: inline-block;
-                    color: #666666;
+                    color: $boxShadowColor;
                     font-weight: 600;
-                    &:hover {
+                    &:hover{
                         color: $blueColor; //when u hover the link, its color will be taht color
                     }
                 }
             }
         }
     }
+    p{
+        color: $boxShadowColor;
+    }
     h4 {
+        color: $whiteColor;
         display: inline-block;
         position: relative;
         margin-bottom: 30px;
         font-weight: 700;
         z-index: 1;
+    }
+    .contact-info{
+        ul{
+            li{
+                color: $boxShadowColor;
+
+            }
+        }
     }
 
     .social-icons {
@@ -85,6 +100,7 @@
         }
     }
     .validThemes {
+        z-index: 44;
         position: absolute;
         top: 28px;
         left: 0;
@@ -93,8 +109,12 @@
             font-weight: 700;
             text-decoration: underline;
         }
+        p{
+            color: $boxShadowColor;
+        }
     }
     .footerEnd-text {
+        z-index: 44;
         position: absolute;
         top: 28px;
         right: 3px;
@@ -104,6 +124,9 @@
             li {
                 list-style: none;
                 margin-left: 15px;
+                a{
+                    color: $whiteColor;
+                }
             }
         }
     }
