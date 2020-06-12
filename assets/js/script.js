@@ -44,7 +44,7 @@ $(document).ready(function () {
         }
     })
     //------------------------------------------------------------------------------------------------
-
+//animation wow
     var wow = new WOW({
         boxClass: 'wow', // animated element css class (default is wow)
         animateClass: 'animated', // animation css class (default is animated)
@@ -54,8 +54,8 @@ $(document).ready(function () {
     });
     wow.init();
     //---------------------------------------------------------------------------------------------
-
-    let numbersCarousel = $('.feature-items'); // feature section's owl-carousel
+// feature section's owl-carousel(homepage's)
+    let numbersCarousel = $('.feature-items'); 
 
     $('.feature-items').owlCarousel({
         loop: true,
@@ -77,23 +77,24 @@ $(document).ready(function () {
     $('.carousel').carousel({ // for testimonials-area's carousel
         interval: 2000
     })
-    //------------------------------------------------------------------------------------------------------
+    //services page's carousel----------------------------------------------------------------------------
     $('.service-carousel').owlCarousel({
         loop: true,
         margin: 10,
         nav: false,
         autoplay: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 3
-            }
-        }
+        items:3,
+        // responsive: {
+        //     0: {
+        //         items: 1
+        //     },
+        //     600: {
+        //         items: 3
+        //     },
+        //     1000: {
+        //         items: 3
+        //     }
+        // }
     })
 
     //answer and question paleace,, show and hide answer and change icon -----------------------------------------------------------

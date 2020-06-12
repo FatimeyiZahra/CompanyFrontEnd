@@ -19,7 +19,7 @@
                         position: absolute;
                         content: "\f058";
                         font-family: "Font Awesome 5 Free";
-                        color: #437eeb;
+                        color: $blueColor;
                         left: 0;
                         top: 0;
                     }
@@ -47,7 +47,7 @@
         }
     }
     .sidebar-item {
-        border: 1px solid #e7e7e7;
+        border: 1px solid $borderColor;
         padding: 30px;
         background: #fafafa;
         padding-top: 0;
@@ -55,7 +55,7 @@
         margin-bottom: 60px;
         .sidebar-title {
             background: linear-gradient(90deg, rgba(30, 85, 189, 1) 0%, rgba(67, 126, 235, 1) 100%);
-            color: #ffffff;
+            color: $whiteColor;
             text-align: center;
             padding: 16px;
             font-weight: 800;
@@ -76,7 +76,7 @@
                         position: absolute;
                         font-family: "Font Awesome 5 Free";
                         content: "\f0a4";
-                        color: #232323;
+                        color: $darkGray;
                         left: 0;
                         top: 0;
                     }

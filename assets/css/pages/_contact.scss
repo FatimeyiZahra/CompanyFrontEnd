@@ -57,11 +57,11 @@
         input,
         textarea {
             border: none;
-            border-bottom: 1px solid #e7e7e7;
+            border-bottom: 1px solid $borderColor;
             border-radius: inherit;
             box-shadow: inherit;
             padding: 0;
-            color: #232323;
+            color: $darkGray;
             margin-bottom: 16px;
         }
         textarea {
@@ -71,9 +71,9 @@
             display: inline-block;
             text-transform: capitalize;
             font-weight: 700;
-            border: 2px solid #e7e7e7;
+            border: 2px solid $borderColor;
             border-radius: 30px;
-            background: #ffffff;
+            background: $whiteColor;
             padding: 10px 35px;
             margin-top: 15px;
             i {
