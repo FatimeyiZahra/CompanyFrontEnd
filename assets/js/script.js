@@ -69,9 +69,14 @@ $(document).ready(function () {
             "<i class='fa fa-angle-right'></i>"
         ],
         responsive: {
+            600: {
+                items: 1,
+
+            },
             1000: {
                 stagePadding: 100,
             }
+            
         }
     });
     $('.carousel').carousel({ // for testimonials-area's carousel
@@ -83,18 +88,18 @@ $(document).ready(function () {
         margin: 10,
         nav: false,
         autoplay: true,
-        items:3,
-        // responsive: {
-        //     0: {
-        //         items: 1
-        //     },
-        //     600: {
-        //         items: 3
-        //     },
-        //     1000: {
-        //         items: 3
-        //     }
-        // }
+        // items:3,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 3
+            }
+        }
     })
 
     //answer and question paleace,, show and hide answer and change icon -----------------------------------------------------------

@@ -379,7 +379,7 @@ inc-ico
 }
 
 #navbar .navbar .navbar-brand .logo-black {
-  display: block;
+  display: none;
 }
 
 #navbar .navbar .navbar-brand img {
@@ -901,7 +901,7 @@ inc-ico
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: url(../img/preloader.gif) center no-repeat #ffffff;
+  background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
 }
 
 #navbar .brandBG img {
@@ -998,7 +998,7 @@ inc-ico
 }
 
 #footer-dark {
-  padding: 120px;
+  padding: 120px 0;
   position: relative;
   background: #111d30 none repeat scroll 0 0 !important;
 }
@@ -2760,8 +2760,8 @@ inc-ico
   #applying-data .image img {
     display: none;
   }
-  #feature {
-    display: none;
+  #feature .feature-items .owl-stage-outer .owl-stage {
+    left: 0;
   }
   #about-us {
     padding: 20px 0;
@@ -2832,6 +2832,15 @@ inc-ico
     text-align: center;
     top: 0;
     right: 0;
+  }
+  #footer-dark .col-lg-2 {
+    margin-right: 50px;
+  }
+  #services-single-are .single-area-p {
+    display: none;
+  }
+  #services-single-are .btn-gradient {
+    padding: 15px 8px;
   }
 }
 /*# sourceMappingURL=style.css.map */

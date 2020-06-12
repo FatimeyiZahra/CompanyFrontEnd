@@ -15,10 +15,10 @@
     #applying-data {
         padding: 110px 0 0 0;
         height: 58vh;
-        h2{
+        h2 {
             font-size: 31px;
         }
-        h1{
+        h1 {
             font-size: 36px;
         }
         .image {
@@ -28,7 +28,13 @@
         }
     }
     #feature {
-        display: none;
+        .feature-items {
+            .owl-stage-outer {
+                .owl-stage {
+                    left: 0;
+                }
+            }
+        }
     }
     #about-us {
         padding: 20px 0;
@@ -112,4 +118,30 @@
             right: 0;
         }
     }
+    #footer-dark {
+        .col-lg-2 {
+            margin-right: 50px;
+        }
+    }
+    #services-single-are {
+        .single-area-p {
+            display: none;
+        }
+        .btn-gradient {
+            padding: 15px 8px;
+        }
+    }
+    // #blog-single-area {
+    //     .button {
+    //         a {
+    //             display: inline-block;
+    //             text-transform: capitalize;
+    //             color: #437eeb;
+    //             border: 1px solid;
+    //             border-radius: -16px;
+    //             font-weight: 400;
+    //             padding: -1px 30px;
+    //         }
+    //     }
+    // }
 }
