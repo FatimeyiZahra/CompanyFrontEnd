@@ -6,6 +6,10 @@
         z-index: 99;
         padding: 0;
         .navbar-brand {
+           
+            .logo-black{
+                display: block;
+            }
             img {
                 position: relative;
                 z-index: 1;

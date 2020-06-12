@@ -1,0 +1,115 @@
+@media only screen and (max-width: 767px) {
+    #navbar {
+        .navbar-brand {
+            .logo-light {
+                display: none;
+            }
+            .logo-black {
+                display: block;
+            }
+            &::after {
+                content: none !important;
+            }
+        }
+    }
+    #applying-data {
+        padding: 110px 0 0 0;
+        height: 58vh;
+        h2{
+            font-size: 31px;
+        }
+        h1{
+            font-size: 36px;
+        }
+        .image {
+            img {
+                display: none;
+            }
+        }
+    }
+    #feature {
+        display: none;
+    }
+    #about-us {
+        padding: 20px 0;
+
+        .nav-tabs {
+            display: block;
+            .nav-item {
+                display: block;
+            }
+        }
+    }
+    #services {
+        .shape-fixed {
+            display: none;
+        }
+        &::before {
+            display: none;
+        }
+    }
+    #services-items {
+        padding: 50px 0;
+
+        .item {
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+    #workProcess {
+        padding: 20px 0;
+        .icon {
+            img {
+                display: none;
+            }
+        }
+    }
+    #our-skill {
+        padding: 20px 0;
+
+        &::before {
+            display: none;
+        }
+        .image {
+            margin-top: 10px;
+            &::after {
+                display: none;
+            }
+            .img2 {
+                left: 57%;
+            }
+        }
+    }
+    #blog-area {
+        padding: 20px 0;
+
+        &::before {
+            display: none;
+        }
+        .text {
+            margin-left: 0;
+        }
+        .item {
+            margin-top: 10px;
+        }
+    }
+    #footer {
+        padding: 20px 0;
+        .image {
+            img {
+                display: none;
+            }
+        }
+        .validThemes {
+            p {
+                padding: 0 22px;
+            }
+        }
+        .footerEnd-text {
+            position: relative;
+            text-align: center;
+            top: 0;
+            right: 0;
+        }
+    }
+}
