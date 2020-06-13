@@ -11,4 +11,41 @@
             margin-bottom: 20px;
         }
     }
+    #our-story {
+        padding: 10px 0 0 0;
+        .our-story-items {
+            .item {
+                position: relative;
+                margin-bottom: 30px;
+                padding-bottom: 30px;
+                
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 5%;
+                    width: 90%;
+                    height: 1px;
+                    border-bottom: 1px dashed #dddddd;
+                }
+            }
+            &::after {
+                display: none !important;
+            }
+        }
+    }
+    #our-skills {
+        padding: 0;
+        .our-skills-text-progressBar{
+            text-align: center;
+        }
+        .image {
+            &::after {
+                display: none !important;
+            }
+            .img2 {
+                left: 58%;
+            }
+        }
+    }
 }
