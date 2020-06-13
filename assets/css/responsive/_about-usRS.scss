@@ -1,0 +1,12 @@
+#about-us-area{
+    padding: 40px 0;
+    &::after{
+        bottom: -11% !important;
+    }
+}
+#feature-list{
+    padding: 40px 0;
+    .item{
+        margin-bottom: 20px;
+    }
+}

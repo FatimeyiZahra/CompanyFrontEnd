@@ -70,7 +70,7 @@ $(document).ready(function () {
         ],
         responsive: {
             600: {
-                items: 1,
+                items: 0.5,
 
             },
             1000: {
