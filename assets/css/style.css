@@ -2891,48 +2891,6 @@ inc-ico
 }
 
 @media only screen and (max-width: 767px) {
-  #navbar .navbar-brand img {
-    left: 75% !important;
-  }
-  #navbar .navbar-brand .logo-light {
-    display: none !important;
-  }
-  #navbar .navbar-brand .logo-black {
-    display: block !important;
-  }
-  #navbar .navbar-brand::after {
-    content: none !important;
-  }
-  #navbar .nav-icons {
-    position: absolute !important;
-    top: 0 !important;
-  }
-  #navbar .brandBG img {
-    left: 75% !important;
-  }
-  #navbar .nav-icons1 {
-    position: absolute !important;
-    top: -13px !important;
-    color: black !important;
-  }
-  #navbar .navbar {
-    background-color: #f8f9fa !important;
-  }
-  #navbar .navbar .nav-link1 {
-    color: #333333 !important;
-  }
-  #navbar .navbar .nav-contact1 {
-    color: #333333;
-  }
-  #navbar .navbar .nav-icons1 a {
-    color: #333333;
-  }
-  #navbar .navbar .brandPic {
-    display: none !important;
-  }
-  #navbar .navbar .brandPic1 {
-    display: block !important;
-  }
   #applying-data {
     padding: 110px 0 0 0;
     height: 58vh;
@@ -3020,6 +2978,135 @@ inc-ico
   #blog-area .item {
     margin-top: 22px;
   }
+}
+
+@media only screen and (max-width: 767px) {
+  #services-single-are {
+    padding: 40px 0;
+  }
+  #services-single-are .single-area-p {
+    display: none;
+  }
+  #services-single-are .btn-gradient {
+    padding: 15px 8px;
+  }
+  #services-single-are .sidebar-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #services-area {
+    padding: 40px 0 0 0;
+  }
+  #services-area .owl-dots {
+    display: none !important;
+  }
+  #workProcess {
+    padding: 40px 0;
+  }
+  #start-us {
+    padding: 40px 0;
+  }
+  #start-us .image {
+    margin-top: 37px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #contact-us {
+    padding: 40px 0;
+  }
+  #contact-us .message {
+    padding: 40px 0;
+  }
+  #contact-us .message button {
+    padding: 6px 20px !important;
+  }
+  #contact-us .message button i {
+    line-height: 25px;
+    width: 25px;
+    height: 25px;
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #blog-area-standard {
+    padding: 40px 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #blog-single-area {
+    padding: 40px 0;
+  }
+  #blog-single-area .item .content .button a {
+    padding: 8px 13px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #about-us-area {
+    padding: 40px 0;
+  }
+  #about-us-area::after {
+    bottom: -11% !important;
+  }
+  #feature-list {
+    padding: 40px 0;
+  }
+  #feature-list .item {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #navbar .navbar-brand img {
+    left: 75% !important;
+  }
+  #navbar .navbar-brand .logo-light {
+    display: none !important;
+  }
+  #navbar .navbar-brand .logo-black {
+    display: block !important;
+  }
+  #navbar .navbar-brand::after {
+    content: none !important;
+  }
+  #navbar .nav-icons {
+    position: absolute !important;
+    top: 0 !important;
+  }
+  #navbar .brandBG img {
+    left: 75% !important;
+  }
+  #navbar .nav-icons1 {
+    position: absolute !important;
+    top: -13px !important;
+    color: black !important;
+  }
+  #navbar .navbar {
+    background-color: #f8f9fa !important;
+  }
+  #navbar .navbar .nav-link1 {
+    color: #333333 !important;
+  }
+  #navbar .navbar .nav-contact1 {
+    color: #333333;
+  }
+  #navbar .navbar .nav-icons1 a {
+    color: #333333;
+  }
+  #navbar .navbar .brandPic {
+    display: none !important;
+  }
+  #navbar .navbar .brandPic1 {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
   #footer {
     padding: 20px 0;
   }
@@ -3053,88 +3140,5 @@ inc-ico
   #footer-dark .footerEnd-text {
     display: none !important;
   }
-}
-
-#services-single-are {
-  padding: 40px 0;
-}
-
-#services-single-are .single-area-p {
-  display: none;
-}
-
-#services-single-are .btn-gradient {
-  padding: 15px 8px;
-}
-
-#services-single-are .sidebar-item:last-child {
-  margin-bottom: 0;
-}
-
-#services-area {
-  padding: 40px 0 0 0;
-}
-
-#services-area .owl-dots {
-  display: none !important;
-}
-
-#workProcess {
-  padding: 40px 0;
-}
-
-#start-us {
-  padding: 40px 0;
-}
-
-#start-us .image {
-  margin-top: 37px !important;
-}
-
-#contact-us {
-  padding: 40px 0;
-}
-
-#contact-us .message {
-  padding: 40px 0;
-}
-
-#contact-us .message button {
-  padding: 6px 20px !important;
-}
-
-#contact-us .message button i {
-  line-height: 25px;
-  width: 25px;
-  height: 25px;
-  font-size: 11px;
-}
-
-#blog-area-standard {
-  padding: 40px 0;
-}
-
-#blog-single-area {
-  padding: 40px 0;
-}
-
-#blog-single-area .item .content .button a {
-  padding: 8px 13px !important;
-}
-
-#about-us-area {
-  padding: 40px 0;
-}
-
-#about-us-area::after {
-  bottom: -11% !important;
-}
-
-#feature-list {
-  padding: 40px 0;
-}
-
-#feature-list .item {
-  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */

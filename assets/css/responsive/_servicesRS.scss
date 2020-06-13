@@ -1,15 +1,17 @@
-#services-area{
-    padding: 40px 0 0 0;
-    .owl-dots{
-        display: none !important;
+@media only screen and (max-width: 767px) {
+    #services-area {
+        padding: 40px 0 0 0;
+        .owl-dots {
+            display: none !important;
+        }
     }
-}
-#workProcess{
-    padding: 40px 0;
-}
-#start-us {
-    padding: 40px 0;
-    .image {
-        margin-top: 37px !important;
+    #workProcess {
+        padding: 40px 0;
+    }
+    #start-us {
+        padding: 40px 0;
+        .image {
+            margin-top: 37px !important;
+        }
     }
 }

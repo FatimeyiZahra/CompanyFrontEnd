@@ -1,0 +1,52 @@
+@media only screen and (max-width: 767px) {
+    #navbar {
+        .navbar-brand {
+            img {
+                left: 75% !important;
+            }
+            .logo-light {
+                display: none !important;
+            }
+            .logo-black {
+                display: block !important;
+            }
+            &::after {
+                content: none !important;
+            }
+        }
+        .nav-icons {
+            position: absolute !important;
+            top: 0 !important;
+        }
+        .brandBG {
+            img {
+                left: 75% !important;
+            }
+        }
+        .nav-icons1 {
+            position: absolute !important;
+            top: -13px !important;
+            color: black !important;
+        }
+        .navbar {
+            background-color: #f8f9fa !important;
+            .nav-link1 {
+                color: #333333 !important;
+            }
+            .nav-contact1 {
+                color: #333333;
+            }
+            .nav-icons1 {
+                a {
+                    color: #333333;
+                }
+            }
+            .brandPic {
+                display: none !important;
+            }
+            .brandPic1 {
+                display: block !important;
+            }
+        }
+    }
+}
