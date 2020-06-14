@@ -35,7 +35,7 @@
         }
     }
     #our-skills {
-        padding: 0;
+        padding:0;
         .our-skills-text-progressBar{
             text-align: center;
         }
@@ -45,6 +45,15 @@
             }
             .img2 {
                 left: 58%;
+            }
+        }
+    }
+    #our-experts{
+        padding: 120px 0 40px 0;
+        .expert-item{
+            padding: 20px;
+            &:first-child{
+                padding: 0;
             }
         }
     }
