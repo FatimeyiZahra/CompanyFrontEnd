@@ -1,18 +1,15 @@
 @media only screen and (max-width: 767px) {
     #footer {
         padding: 20px 0;
-        // .image {
-        //     img {
-        //         display: none;
-        //     }
-        // }
         .links {
             display: none !important;
         }
         .validThemes {
             top: 0 !important;
+            left: 5px !important;
             p {
                 padding: 1 16px;
+                font-size: 13px !important;
             }
         }
         .footerEnd-text {
@@ -33,6 +30,10 @@
         .validThemes {
             // display: none !important;
             top: -20px !important;
+            left: 13px;
+            p {
+                font-size: 11px !important;
+            }
         }
         .footerEnd-text {
             display: none !important;

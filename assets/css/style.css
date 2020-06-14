@@ -2159,13 +2159,10 @@ inc-ico
   padding: 30px 50px 30px 30px;
 }
 
-#services-single-are .answer-question .card .card-header .icon {
-  margin-right: 22px;
-  margin-top: 24px;
-}
-
-#services-single-are .answer-question .card .card-header .icon i {
+#services-single-are .answer-question .card .card-header i {
   color: black;
+  margin-top: 31px;
+  margin-right: 20px;
 }
 
 #services-single-are .answer-question .card .card-body {
@@ -3383,9 +3380,11 @@ inc-ico
   }
   #footer .validThemes {
     top: 0 !important;
+    left: 5px !important;
   }
   #footer .validThemes p {
     padding: 1 16px;
+    font-size: 13px !important;
   }
   #footer .footerEnd-text {
     display: none !important;
@@ -3404,6 +3403,10 @@ inc-ico
   }
   #footer-dark .validThemes {
     top: -20px !important;
+    left: 13px;
+  }
+  #footer-dark .validThemes p {
+    font-size: 11px !important;
   }
   #footer-dark .footerEnd-text {
     display: none !important;

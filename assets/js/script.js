@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    //navbar side menu------------------------------------------------------
+    // for navbar side menu------------------------------------------------------
     $(".fa-search").click(function (e) {
         e.preventDefault();
         $(".top-search").slideToggle("show");
@@ -14,12 +14,9 @@ $(document).ready(function () {
         e.preventDefault();
         $(".side-menu").removeClass("open")
     })
-    //----------------------------------------------------------------------------------------------------
-    // change navbar background color---------------------------------------------------------------------
-    // if (window.scrollY == 0) {
-    //     $(".navbar-brand").addClass("transparent-bg");
-    // }
+    //--------------------------------------------------------------------------------------
 
+    // for change navbar's  color------------------------------------------------------------
     $(document).on('scroll', function (e) {
         if (window.scrollY > 0) {
             // $(".brandBG").removeClass("transparent-bg");
@@ -29,7 +26,6 @@ $(document).ready(function () {
             $('.nav-link1').addClass('nav-link-black');
             $('.nav-contact1').addClass('nav-contact1-black');
             $('.nav-icons1 ul li a').addClass('nav-icon-black')
-
         }
         else if (window.scrollY == 0) {
             // $(".brandBG").addClass("transparent-bg");
@@ -43,8 +39,8 @@ $(document).ready(function () {
 
         }
     })
-    //------------------------------------------------------------------------------------------------
-//animation wow
+    //---------------------------------------------------------------------------------------
+    //animation wow
     var wow = new WOW({
         boxClass: 'wow', // animated element css class (default is wow)
         animateClass: 'animated', // animation css class (default is animated)
@@ -53,9 +49,10 @@ $(document).ready(function () {
         live: true // act on asynchronously loaded content (default is true)
     });
     wow.init();
-    //---------------------------------------------------------------------------------------------
-// feature section's owl-carousel(homepage's)
-    let numbersCarousel = $('.feature-items'); 
+    //---------------------------------------------------------------------------------------
+
+    // for feature section's owl-carousel(Homepage's)---------------------------------------
+    let numbersCarousel = $('.feature-items');
 
     $('.feature-items').owlCarousel({
         loop: true,
@@ -76,13 +73,13 @@ $(document).ready(function () {
             1000: {
                 stagePadding: 100,
             }
-            
+
         }
     });
     $('.carousel').carousel({ // for testimonials-area's carousel
         interval: 2000
     })
-    //services page's carousel----------------------------------------------------------------------------
+    // for services page's carousel-----------------------------------------------------------
     $('.service-carousel').owlCarousel({
         loop: true,
         margin: 10,
@@ -101,24 +98,26 @@ $(document).ready(function () {
             }
         }
     })
+    //---------------------------------------------------------------------------------------
 
-    //answer and question paleace,, show and hide answer and change icon -----------------------------------------------------------
+    //answer-question pleace ,change icons (Services Single page) -------------------------
     $('.card-header').each(function () {
         var elem = $(this);
         elem.click(function () {
             elem.next().slideToggle("slow");
-
-            if ($(".eye-icon").hasClass("fa-eye-slash")) {
-                $(".eye-icon").removeClass("fa-eye-slash").addClass("fa-eye");
+            var icon = elem.children().eq(1)
+            if (icon.hasClass("fa-eye-slash")) {
+                icon.removeClass("fa-eye-slash").addClass("fa-eye");
             }
             else {
-                $(".eye-icon").removeClass("fa-eye").addClass("fa-eye-slash");
+                icon.removeClass("fa-eye").addClass("fa-eye-slash");
             }
 
         })
     })
-    //----------------------------------------------------------------------
-    // for fact section's time
+    //--------------------------------------------------------------------------------------
+
+    // for fact section's time (Home Page)---------------------------------------------------
     $('.timer').countTo();
     $('.fun-item').appear(function () {
         $('.timer').countTo();

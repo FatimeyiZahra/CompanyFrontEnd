@@ -123,13 +123,15 @@
                     margin: 0;
                     padding: 30px 50px 30px 30px;
                 }
-                .icon {
-                    margin-right: 22px;
-                    margin-top: 24px;
+                // .icon {
+                //     margin-right: 22px;
+                //     margin-top: 24px;
                     i {
                         color: black;
+                        margin-top: 31px;
+                        margin-right: 20px;
                     }
-                }
+                // }
             }
             .card-body {
                 display: none;
