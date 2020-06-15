@@ -66,10 +66,10 @@ $(document).ready(function () {
             "<i class='fa fa-angle-right'></i>"
         ],
         responsive: {
-            600: {
-                items: 0.5,
+            // 600: {
+            //     items: 0.5,
 
-            },
+            // },
             1000: {
                 stagePadding: 100,
             }
@@ -85,6 +85,7 @@ $(document).ready(function () {
         margin: 30,
         nav: false,
         autoplay: true,
+        dots: true,
         // items:3,
         responsive: {
             0: {

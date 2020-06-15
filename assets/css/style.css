@@ -2376,6 +2376,10 @@ inc-ico
   margin-left: 5px;
 }
 
+#map {
+  padding-bottom: 50px;
+}
+
 #map iframe {
   border: medium none;
   width: 100%;
@@ -3260,6 +3264,9 @@ inc-ico
     width: 25px;
     height: 25px;
     font-size: 11px;
+  }
+  #map {
+    padding-bottom: 50px;
   }
 }
 
