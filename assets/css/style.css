@@ -1843,6 +1843,7 @@ inc-ico
 #services-area .service-carousel .owl-stage-outer {
   margin: -15px -15px 0;
   padding: 15px;
+  overflow: hidden;
 }
 
 #services-area .service-carousel .owl-stage-outer .item {

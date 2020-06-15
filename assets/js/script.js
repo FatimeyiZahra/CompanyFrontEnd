@@ -82,7 +82,7 @@ $(document).ready(function () {
     // for services page's carousel-----------------------------------------------------------
     $('.service-carousel').owlCarousel({
         loop: true,
-        margin: 10,
+        margin: 30,
         nav: false,
         autoplay: true,
         // items:3,
