@@ -299,7 +299,7 @@
             }
             .social-link {
                 position: absolute;
-                bottom: 15%;
+                bottom: 20%;
                 left: 26%;
                 ul {
                     display: inline-block;
@@ -320,11 +320,12 @@
                 }
             }
             .info {
+                margin-top: 25px;
                 h4 {
                     font-weight: 700;
                     margin-bottom: 10px;
                 }
-                span{
+                span {
                     font-weight: 700;
                     color: #888888;
                 }

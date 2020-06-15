@@ -15,7 +15,7 @@
                     position: relative;
                     margin-bottom: 15px;
                     padding-left: 22px;
-                    &::after {
+                    &::after { // for check icon
                         position: absolute;
                         content: "\f058";
                         font-family: "Font Awesome 5 Free";
@@ -103,7 +103,7 @@
             padding-left: 15px;
         }
     }
-    .answer-question {
+    .answer-question { //there are question - answer pleace and icon design
         .card {
             border: 1px solid #dddddd;
             margin-bottom: 15px;
@@ -123,15 +123,11 @@
                     margin: 0;
                     padding: 30px 50px 30px 30px;
                 }
-                // .icon {
-                //     margin-right: 22px;
-                //     margin-top: 24px;
                     i {
                         color: black;
                         margin-top: 31px;
                         margin-right: 20px;
                     }
-                // }
             }
             .card-body {
                 display: none;

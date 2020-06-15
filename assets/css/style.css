@@ -633,14 +633,14 @@ inc-ico
   padding-right: 15px;
 }
 
-#navbar .side-menu .widget x ul li {
+#navbar .side-menu .widget ul li {
   display: block;
   font-family: "Nunito", sans-serif;
   font-size: 15px;
   margin-bottom: 15px;
 }
 
-#navbar .side-menu .widget x ul li a {
+#navbar .side-menu .widget ul li a {
   color: #232323;
 }
 
@@ -1206,13 +1206,13 @@ inc-ico
 }
 
 #our-skill .image::after {
+  content: "";
   position: absolute;
   left: 22%;
   top: 9%;
   height: 509px;
   width: 509px;
   border: 50px solid #437eeb;
-  content: "";
   z-index: -1;
   opacity: 0.07;
   border-radius: 50%;
@@ -1943,6 +1943,7 @@ inc-ico
 }
 
 #services-area .shape-fixed .image img {
+  z-index: -1;
   -webkit-animation: spin 10s linear infinite;
           animation: spin 10s linear infinite;
 }
@@ -2315,12 +2316,12 @@ inc-ico
 }
 
 #contact-us .sidebar-item .items::after {
-  position: absolute;
-  right: -15px;
-  top: 15px;
-  height: 100%;
-  width: 100%;
   content: "";
+  position: absolute;
+  top: 15px;
+  right: -15px;
+  width: 100%;
+  height: 100%;
   background: #ffffff;
   z-index: -1;
   -webkit-box-shadow: 0 5px 30px 0 rgba(214, 215, 216, 0.57);
@@ -3077,7 +3078,7 @@ inc-ico
 
 #our-experts .team-list .expert-item .social-link {
   position: absolute;
-  bottom: 15%;
+  bottom: 20%;
   left: 26%;
 }
 
@@ -3102,6 +3103,10 @@ inc-ico
 
 #our-experts .team-list .expert-item .social-link ul li:last-child {
   margin-right: 0;
+}
+
+#our-experts .team-list .expert-item .info {
+  margin-top: 25px;
 }
 
 #our-experts .team-list .expert-item .info h4 {
@@ -3146,6 +3151,8 @@ inc-ico
   #about-us .nav-tabs {
     display: block !important;
     margin-bottom: 14px !important;
+    width: 100% !important;
+    text-align: center !important;
   }
   #about-us .nav-tabs li {
     display: block !important;
@@ -3271,11 +3278,21 @@ inc-ico
 }
 
 @media only screen and (max-width: 767px) {
+  #anada-head {
+    padding-top: 154px !important;
+    padding-bottom: 107px !important;
+  }
   #about-us-area {
     padding: 40px 0;
   }
   #about-us-area::after {
     bottom: -11% !important;
+  }
+  #about-us-area .information h2 {
+    font-size: 26px;
+  }
+  #about-us-area .information h4 {
+    font-size: 18px;
   }
   #feature-list {
     padding: 40px 0;
@@ -3319,10 +3336,16 @@ inc-ico
     padding: 120px 0 40px 0;
   }
   #our-experts .expert-item {
-    padding: 20px;
+    margin-bottom: 20px !important;
   }
   #our-experts .expert-item:first-child {
-    padding: 0;
+    padding: 0 !important;
+  }
+  #our-experts .expert-item .social-link {
+    bottom: 23% !important;
+  }
+  #our-experts .expert-item .info {
+    margin-top: 19px !important;
   }
 }
 

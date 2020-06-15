@@ -27,7 +27,7 @@
                 border-radius: 5px;
                 // box-shadow: 0 5px 30px 0 rgba(56, 57, 58, 0.57);
                 z-index: 1;
-                &::after {
+                &::after { //when u hover the item it'll turn to that
                     content: "";
                     position: absolute;
                     left: 0;
@@ -44,17 +44,17 @@
                     bottom: 0;
                 }
                 &:hover {
-                    .btn-standard {
-                        color: $whiteColor;
+                    .btn-standard { 
+                        color: $whiteColor; //button text color turn to from blue to white
                         i {
-                            box-shadow: none;
+                            box-shadow: none; // u cant see box-shadow
                         }
                     }
                     h4 {
-                        color: $whiteColor;
+                        color: $whiteColor; //text change its color
                     }
                     p {
-                        color: $whiteColor;
+                        color: $whiteColor; //text change its color
                     }
                 }
                 h4 {
@@ -72,7 +72,7 @@
         }
         .owl-dot {
             margin-top: 20px;
-            span {
+            span { //for owl-dots design
                 display: block;
                 height: 20px;
                 width: 20px;
@@ -84,8 +84,8 @@
                 box-shadow: 0 0 10px $boxShadowColor;
             }
             &.active {
-                span {
-                    &::after {
+                span { 
+                    &::after { //for little blue dots
                         position: absolute;
                         left: 50%;
                         top: 50%;
@@ -108,7 +108,7 @@
             right: 52px;
             top: 113px;
             img {
-              
+              z-index: -1;
                 animation: spin 10s linear infinite;
             }
         }

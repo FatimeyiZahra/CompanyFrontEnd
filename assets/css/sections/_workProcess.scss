@@ -11,7 +11,7 @@
             color: $blueColor;
             font-size: 20px;
             z-index: 1;
-            &::after {
+            &::after { //for blue box-shadow effect
                 content: "";
                 position: absolute;
                 left: 0;
@@ -73,7 +73,7 @@
                 margin-bottom: 10px;
                 margin-top: 20px;
                 padding-top: 70px;
-                &::before {
+                &::before { // for line 
                     content: "";
                     border-left: 2px dashed #dddddd;
                     top: 18px;
@@ -88,7 +88,7 @@
             }
 
             p {
-                &::after {
+                &::after { // for raound things
                     content: "";
                     border: 2px solid #dddddd;
                     -webkit-border-radius: 50%;
@@ -106,7 +106,7 @@
             }
         }
         &:hover {
-            h4 {
+            h4 { //when u hover work-progress-item it lose its height
                 &::before {
                     height: 0px;
                 }

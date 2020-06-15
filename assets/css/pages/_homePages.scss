@@ -3,21 +3,21 @@
     height: 100vh;
     padding-top: 90px;
     h2 {
-        font-family: $primary_font_family;
+        font-family: $primary_font_family; //Nunito
         font-size: 36px;
         display: block;
         font-weight: 200;
         margin-bottom: 20px;
     }
     h1 {
-        font-family: $primary_font_family;
+        font-family: $primary_font_family; //Nunito
         font-size: 60px;
         font-weight: 800;
         line-height: 1;
         margin-bottom: 30px;
     }
     p {
-        font-family: $primary_font_family;
+        font-family: $primary_font_family; //Nunito
         color: $grayColor;
         line-height: 28px;
         margin: 0 0 15px;
@@ -44,7 +44,7 @@
                 margin: -15px -15px 0;
                 padding: 15px;
                 .owl-stage {
-                    left: -100px;
+                    left: -100px; //for to start from the left
                     .owl-item {
                         padding: 50px;
                         border-bottom: 3px solid $blueColor;
@@ -79,7 +79,7 @@
                     }
                 }
             }
-            .owl-dot {
+            .owl-dot { // for change owl-dots style
                 margin-top: 20px;
                 span {
                     display: block;
@@ -92,7 +92,7 @@
                     z-index: 1;
                     box-shadow: 0 0 10px $boxShadowColor;
                 }
-                &.active {
+                &.active { //for little blue dot 
                     span {
                         &::after {
                             position: absolute;
@@ -133,7 +133,7 @@
             color: $blueColor;
             font-size: 20px;
             z-index: 1;
-            &::after {
+            &::after { //it makes shadow effect for h4
                 content: "";
                 position: absolute;
                 left: 0;
@@ -158,7 +158,7 @@
         margin-top: 40px;
         border-bottom: none;
         margin-bottom: 40px;
-        .nav-tabs {
+        .nav-tabs { //there are 3 bottom
             border-bottom: none;
             margin-bottom: 40px;
             li {
@@ -175,10 +175,10 @@
                     position: relative;
                     z-index: 1;
                     color: $grayColor;
-                    &.active {
+                    &.active { //which button is active it seems like that
                         background: linear-gradient(90deg, rgba(30, 85, 189, 1) 0%, rgba(67, 126, 235, 1) 100%);
                         color: $whiteColor;
-                        &::after {
+                        &::after { //it s for a:active line
                             content: "";
                             position: absolute;
                             background: $blueColor;
@@ -187,7 +187,7 @@
                             left: 50%;
                             bottom: -15px;
                         }
-                        &::before {
+                        &::before { //it s for a:active round
                             content: "";
                             position: absolute;
                             border: 2px solid $blueColor;
@@ -204,7 +204,7 @@
             }
         }
     }
-    .tab-content {
+    .tab-content { //when u click a u see this content
         margin-top: -30px;
         padding: 50px;
         background: $whiteColor;
@@ -229,7 +229,7 @@
     padding: 120px 0;
     .fact-item {
         .item {
-            .timer {
+            .timer { //numbers design
                 display: block;
                 font-size: 50px;
                 font-weight: 800;
@@ -242,7 +242,7 @@
                 background: linear-gradient(90deg, rgba(3, 25, 65, 1) 0%, rgba(67, 126, 235, 1) 100%);
                 -webkit-background-clip: text;
             }
-            span {
+            span { // tect whichone explain numbers means
                 display: block;
                 font-weight: 600;
                 font-size: 18px;
@@ -255,7 +255,7 @@
 #services {
     padding-top: 40px;
     position: relative;
-    &::before {
+    &::before { // for section design in the left
         content: "";
         display: inline-block;
         position: absolute;
@@ -281,7 +281,7 @@
         right: 50px;
         top: 92px;
         img {  
-            animation: spin 10s linear infinite;
+            animation: spin 10s linear infinite; // image moving
         }
     }
     @-moz-keyframes spin {
@@ -311,7 +311,7 @@
         z-index: 1;
         overflow: hidden;
         border-radius: 5px;
-        &::after {
+        &::after { 
             content: "";
             position: absolute;
             left: 0;
@@ -323,22 +323,22 @@
             z-index: -1;
             transition: all 0.25s ease-in-out;
         }
-        &:hover::after {
+        &:hover::after { //when u hover the item it'll seems blue  
             opacity: 1;
             bottom: 0;
         }
         &:hover {
-            .btn-standard {
+            .btn-standard { //button change its color when u hover the item
                 color: $whiteColor;
                 i {
-                    box-shadow: none;
+                    box-shadow: none; //icon ll  lost its box-shadow
                 }
             }
             h4 {
-                color: $whiteColor;
+                color: $whiteColor; // it ll turn from black to white
             }
             p {
-                color: $whiteColor;
+                color: $whiteColor; //it ll turn from gray to white
             }
         }
         h4 {
@@ -367,7 +367,7 @@
             position: relative;
             z-index: 1;
             display: inline-block;
-            &::after {
+            &::after { //it makes blue  shadow effect for h4
                 content: "";
                 position: absolute;
                 left: 0;
@@ -403,7 +403,7 @@
                         text-align: center;
                         border-radius: 50%;
                         margin-bottom: 30px;
-                        &::after {
+                        &::after { //it s like caret-down icon
                             content: "";
                             position: absolute;
                             left: 50%;
@@ -429,7 +429,7 @@
                     }
                 }
             }
-            .carousel-indicators {
+            .carousel-indicators { //it made with picture
                 position: relative;
                 margin-top: 35px;
                 li {
@@ -438,11 +438,11 @@
                         transition: all 0.35s ease-in-out;
                         transform: scale(1.4);
                         margin: 0 25px;
-                        img {
+                        img { //when li is active its background color :
                             background: linear-gradient(to right, rgba(30, 85, 189, 1) 0%, rgba(67, 126, 235, 1) 100%);
                         }
                     }
-                    img {
+                    img { //for image design
                         box-shadow: 0 0 10px $boxShadowColor;
                         display: block;
                         height: auto;
@@ -483,7 +483,7 @@
                 max-width: 100%;
                 border-radius: 10px 10px 0 0;
             }
-            .date {
+            .date { //for date(div) design and set its pleace
                 position: absolute;
                 left: 30px;
                 bottom: -30px;
@@ -503,7 +503,7 @@
             h4 {
                 margin-bottom: 20px;
             }
-            .meta {
+            .meta { //for name and icon pleace
                 ul {
                     list-style: none;
                     i {
@@ -532,7 +532,7 @@
             }
         }
     }
-    &::before {
+    &::before { //for section design whichone is in the left
         content: "";
         display: inline-block;
         position: absolute;

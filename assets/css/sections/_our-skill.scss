@@ -32,7 +32,7 @@
             }
         }
     }
-    &::before {
+    &::before { // for this section design, it s in the left
         content: "";
         display: inline-block;
         position: absolute;
@@ -58,14 +58,14 @@
             left: 78%;
             height: 73%;
         }
-        &::after {
+        &::after { // it sbig ring 
+            content: "";
             position: absolute;
             left: 22%;
             top: 9%;
             height: 509px;
             width: 509px;
             border: 50px solid $blueColor;
-            content: "";
             z-index: -1;
             opacity: 0.07;
             border-radius: 50%;

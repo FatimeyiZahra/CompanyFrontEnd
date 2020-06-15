@@ -32,10 +32,11 @@
     }
     #about-us {
         padding: 20px 0;
-
         .nav-tabs {
             display: block !important;
             margin-bottom: 14px !important;
+            width: 100% !important;
+            text-align: center !important;
             li {
                 display: block !important;
                 a {
@@ -102,19 +103,4 @@
             margin-top: 22px;
         }
     }
-  
-
-    // #blog-single-area {
-    //     .button {
-    //         a {
-    //             display: inline-block;
-    //             text-transform: capitalize;
-    //             color: #437eeb;
-    //             border: 1px solid;
-    //             border-radius: -16px;
-    //             font-weight: 400;
-    //             padding: -1px 30px;
-    //         }
-    //     }
-    // }
 }

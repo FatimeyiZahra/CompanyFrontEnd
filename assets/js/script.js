@@ -16,7 +16,7 @@ $(document).ready(function () {
     })
     //--------------------------------------------------------------------------------------
 
-    // for change navbar's  color------------------------------------------------------------
+    // for change navbar's design (color etc.)------------------------------------------------------------
     $(document).on('scroll', function (e) {
         if (window.scrollY > 0) {
             // $(".brandBG").removeClass("transparent-bg");
@@ -76,7 +76,7 @@ $(document).ready(function () {
 
         }
     });
-    $('.carousel').carousel({ // for testimonials-area's carousel
+    $('.carousel').carousel({ // for testimonials-area's carousel(Home Page)
         interval: 2000
     })
     // for services page's carousel-----------------------------------------------------------
@@ -94,7 +94,7 @@ $(document).ready(function () {
                 items: 1
             },
             1000: {
-                items: 3
+                items: 3,
             }
         }
     })
@@ -105,7 +105,7 @@ $(document).ready(function () {
         var elem = $(this);
         elem.click(function () {
             elem.next().slideToggle("slow");
-            var icon = elem.children().eq(1)
+            var icon = elem.children().eq(1) //when u click the card-header(div) it ll turn from eye to eye slah icon
             if (icon.hasClass("fa-eye-slash")) {
                 icon.removeClass("fa-eye-slash").addClass("fa-eye");
             }
@@ -128,7 +128,7 @@ $(document).ready(function () {
 
 });
 
-
+//for loader
 $(window).load(function () {
     // Animate loader off screen
     $(".se-pre-con").fadeOut("slow");;

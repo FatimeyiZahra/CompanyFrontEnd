@@ -1,8 +1,20 @@
 @media only screen and (max-width: 767px) {
+    #anada-head{
+        padding-top: 154px !important;
+        padding-bottom: 107px !important;
+    }
     #about-us-area {
         padding: 40px 0;
         &::after {
             bottom: -11% !important;
+        }
+        .information{
+            h2{
+                font-size: 26px;
+            }
+            h4{
+                font-size: 18px
+            }
         }
     }
     #feature-list {
@@ -51,9 +63,15 @@
     #our-experts{
         padding: 120px 0 40px 0;
         .expert-item{
-            padding: 20px;
+            margin-bottom: 20px !important;
             &:first-child{
-                padding: 0;
+                padding: 0 !important;
+            }
+            .social-link{
+                bottom: 23% !important;
+            }
+            .info{
+                margin-top: 19px !important;
             }
         }
     }

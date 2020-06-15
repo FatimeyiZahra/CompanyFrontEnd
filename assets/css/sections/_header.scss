@@ -6,8 +6,8 @@
         z-index: 99;
         padding: 0;
         .navbar-brand {
-           
-            .logo-black{
+            .logo-black {
+                //there are 2 navbar brand picture, one of them is display block
                 display: none;
             }
             img {
@@ -16,6 +16,7 @@
                 left: 62px;
             }
             &::after {
+                //for image background color
                 content: "";
                 position: absolute;
                 left: 0;
@@ -24,9 +25,8 @@
                 width: 12em;
                 background-color: $blueColor;
             }
-            
         }
-        
+
         .navbar-collapse {
             margin-right: 60px;
             .navbar-nav {
@@ -45,7 +45,7 @@
                         letter-spacing: 0.06em;
                         text-transform: uppercase;
                         &::after {
-                            content: "\f107";
+                            content: "\f107"; // 'down' icon
                             font-family: "Font Awesome 5 Free";
                         }
                     }
@@ -53,7 +53,8 @@
                         .nav-link {
                             color: $blueColor;
                             &::after {
-                                content: "\f106";
+                                // 'up ' icon
+                                content: "\f106"; //when u hover the nav-item, icon turn from down to up
                             }
                         }
                         .hover-menu {
@@ -230,7 +231,7 @@
             }
         }
         .widget {
-            x ul {
+            ul {
                 li {
                     display: block;
                     font-family: "Nunito", sans-serif;
@@ -242,7 +243,7 @@
                 }
             }
         }
-        .widget-social {
+        .widget-social { //social media icons
             ul {
                 display: flex;
                 li {

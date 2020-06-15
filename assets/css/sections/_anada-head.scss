@@ -5,7 +5,7 @@
     padding-top: 190px;
     padding-bottom: 120px;
     // background-image: url("../img/shape/png");
-    .fixed-bg {
+    .fixed-bg { //background image
         position: absolute;
         left: 0;
         top: 0;
@@ -17,10 +17,11 @@
         opacity: 0.7;
     }
     .services-heading {
-        h1 {
+        h1 { //page's name
             font-weight: 700;
             color: $whiteColor;
         }
+        //its show u where r u (which page)
         .breadcrumb {
             background: transparent none repeat scroll 0 0;
             display: inline-block;
@@ -45,7 +46,7 @@
                 a {
                     position: relative;
                     color: $whiteColor;
-                    &::after {
+                    &::after { // for round things
                         content: "";
                         position: absolute;
                         font-family: "themify";

@@ -115,7 +115,7 @@
             }
         }
     }
-    .tags-share-icon {
+    .tags-share-icon { //there are social media icons and tags
         margin-top: 50px;
         .tags {
             a {
@@ -156,7 +156,7 @@
     }
     .blog-comments {
         margin-top: 40px;
-        h4 {
+        h4 { //u can see  how many comments are there 
             border-bottom: 1px solid #e2e2e2;
             font-weight: 700;
             margin-bottom: 30px;
@@ -165,7 +165,7 @@
         .comment-list {
             .comment {
                 margin-bottom: 25px;
-                .image {
+                .image { //who wrote comment -its picture
                     float: left;
                     height: 105px;
                     width: 105px;
@@ -174,9 +174,9 @@
                         width: 80px;
                     }
                 }
-                .content {
+                .content { 
                     display: table-cell;
-                    .head {
+                    .head { //its name and date
                         display: flex;
                         align-items: center;
                         margin-bottom: 15px;
@@ -192,7 +192,7 @@
                             margin-left: 15px;
                         }
                     }
-                    .reply {
+                    .reply { //reply button
                         margin-bottom: 15px;
                         a {
                             display: inline-block;
@@ -212,7 +212,7 @@
             }
             .comment-reply {
                 padding-left: 80px;
-                .image {
+                .image { //who replied the comment its picture
                     float: left;
                     height: 105px;
                     width: 105px;
@@ -223,7 +223,7 @@
                 }
                 .content {
                     display: table-cell;
-                    .head {
+                    .head { //its name and date
                         display: flex;
                         align-items: center;
                         margin-bottom: 15px;
@@ -239,7 +239,7 @@
                             margin-left: 15px;
                         }
                     }
-                    .reply {
+                    .reply { //replt button
                         margin-bottom: 15px;
                         a {
                             display: inline-block;
@@ -259,7 +259,7 @@
             }
         }
     }
-    .comment {
+    .comment { //for write ur comment 
         margin-top: 25px;
         h4 {
             border-bottom: 1px solid #e7e7e7;
@@ -284,7 +284,7 @@
         textarea {
             min-height: 150px;
         }
-        button {
+        button { ///for "post comment" button
             background: linear-gradient(90deg, rgba(30,85,189,1) 0%, rgba(67,126,235,1) 100%);
             border: 1px solid transparent;
             color: #ffffff;
